@@ -7,5 +7,6 @@ li{
     text-transform: capitalize;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    cursor:  pointer;
 }
 

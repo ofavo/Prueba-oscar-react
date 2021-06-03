@@ -35,11 +35,12 @@ const ViewIndividualUser = (props) => {
              
             </div> 
             <div className="col repos">
+                <h3>Repositiorios</h3>
                {repos.length > 0
                    ? <ul class="list-group shadow">
                    {repos?.map((ele, index) => {
                        return(
-                       <li key={index} class="list-group-item d-flex justify-content-between align-items-center"
+                       <li key={index} class="list list-group-item d-flex justify-content-between align-items-center"
                          
                        >
    
