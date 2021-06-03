@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ViewUsers from './screens/viewUsers';
+import ViewIndividualUser from './screens/viewIndividualUser';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="navbar navbar-dark bg-dark">
+        <div className="container text-center">
+          <a className="navbar-brand mx-auto" href="#">
+            <h2>Prueba Oscar Villamizar</h2>
+         </a>
+  </div>
+      </nav>
+        <BrowserRouter>
+          <Switch>
+            <Route path='/' component={ViewUsers} exact />
+            <Route path='/user' component={ViewIndividualUser}  />
+          </Switch>
+        </BrowserRouter>
     </div>
   );
 }

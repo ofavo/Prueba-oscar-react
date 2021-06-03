@@ -1,0 +1,11 @@
+img {
+    width: 10hv !important;
+    height: 10vh !important;
+}
+li{
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
